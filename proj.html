@@ -1,0 +1,214 @@
+<!-- o HTML já é responsivo por natureza; o CSS pode, então, tirar sua responsividade-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Site</title>
+    <link rel="stylesheet" href="./assets/css/normalize.css">
+    <link rel="stylesheet" href="./assets/css/proj.css"> <!-- quando estiver em outra pasta, primeiro começamos com "./", depois navegamos até encontrar o arquivo .css -->
+    <script 
+    src="https://kit.fontawesome.com/f8616f0a16.js" 
+    crossorigin="anonymous">
+    </script>
+</head>
+<body>
+    <div class="bg-dark">
+        <header>
+            <h1>Portfólio</h1>
+            <nav>
+                <a href="#home" target="_self">Home</a> <!-- target="_blank" abre o link conservando a página principal, enquanto target="_self" mantém o mesmo comportamento não tivesse nenhum "target", em que abre o link no lugar da pagina principal e, assim, teriamos que voltar -->
+                <a href="#sobre" target="_self">Sobre</a>
+                <a href="#projetos" target="_self">Projetos</a>
+                <a href="#serviços" target="_self">Serviços</a>
+                <a href="#serviços" target="_self">Conhecimentos</a>
+                <a href="#contato" target="_self">Contato</a>
+        
+            </nav>
+        </header>
+    </div>
+
+    <main>
+        <section id="home"> <!-- id facilita a navegação -->
+            <div class="home-cta">
+                <div class="home-heading">
+                    <p>Bem vindo ao meu mundo!</p>
+                    <h1>Olá, sou Diego Nadur</h1>
+                    <p>Desenvolvedor Front-End e Trainee de DVP</p>
+                </div>
+
+                <a class="btn" href="https://github.com/diegonadurcrv-ux" target="_blank">
+                    <i class="fa-brands fa-github fa-xl"></i>@diegonadurcrv-ux
+                </a>
+            </div>
+
+            <img src="./assets/img/spider-man.jpg" alt="Spider Man Miles Morales">
+        </section>
+
+        <div class="bg-dark">
+            <section id="sobre">
+                <div class="mobile-sobre">
+                    <h2>Sobre</h2>
+                    <img src="./assets/img/eu.jpeg" alt="Este sou eu, Diego, com um moletom preto da Nike, sorrindo, com uma paisagem da natureza ao fundo">
+                    <div class="sobre-content">
+                        <p>
+                        Tenho 19 anos e sou estudante de Ciência da Computação na Universidade Federal de Itajubá (UNIFEI-MG). Movido pela paixão
+                        por tecnologia e pela criação de soluções eficientes, possuo domínio em tecnologias e linguagens como HTML, CSS, JavaScript, C e Python.
+                        </p>
+                        <p>
+                        Ao longo da minha trajetória, adquiri ampla experiência em desenvolvimento de software, arquitetura de sistemas e integração de serviços web.
+                        Meu trabalho vai desde a estruturação de lógicas complexas — como algoritmos de busca e manipulação de matrizes aplicados na criação de jogos —
+                        até a engenharia de plataformas robustas, como o sistema de gerenciamento de alto volume de dados. No Front-end, tenho um olhar afiado para UI/UX,
+                        entregando desde Landing Pages otimizadas para conversão até sistemas ágeis e de interface intuitiva. Meu foco é sempre unir um código limpo, arquitetura
+                        escalável e a melhor experiência para o usuário.
+                        </p>
+                    </div>
+                    <div class="sobre-links">
+                        <a class="btn w-100" href="https://www.linkedin.com/in/diego-nadur-86643830b?utm_source=share_via&utm_content=profile&utm_medium=member_ios" target="_blank">
+                            <i class="fa-brands fa-linkedin fa-xl"></i>@diego-nadur</a>
+                        <a class="btn w-100" href="https://www.instagram.com/diego_pereira.nc?igsh=eHBrZmJnN3FlMWY2&utm_source=qr" target="_blank">
+                            <i class="fa-brands fa-instagram fa-xl"></i>@diego_pereira.nc</a>
+                    </div>
+                </div>
+                <div class="desktop-sobre">
+                    <div class="sobre-left">
+                        <img src="./assets/img/eu.jpeg" alt="Este sou eu, Diego, com um moletom preto da Nike, sorrindo, com uma paisagem da natureza ao fundo">
+            
+                        <div class="sobre-links">
+                            <a class="btn w-100" href="https://www.linkedin.com/in/diego-nadur-86643830b?utm_source=share_via&utm_content=profile&utm_medium=member_ios" target="_blank">
+                                <i class="fa-brands fa-linkedin fa-xl"></i>@diego-nadur</a>
+                            <a class="btn w-100" href="https://www.instagram.com/diego_pereira.nc?igsh=eHBrZmJnN3FlMWY2&utm_source=qr" target="_blank">
+                                <i class="fa-brands fa-instagram fa-xl"></i>@diego_pereira.nc</a>
+                        </div>
+                    </div>
+                    <div class="sobre-right">
+                        <h2>Sobre</h2>
+                        <p>
+                        Tenho 19 anos e sou estudante de Ciência da Computação na Universidade Federal de Itajubá (UNIFEI-MG). Movido pela paixão
+                        por tecnologia e pela criação de soluções eficientes, possuo domínio em tecnologias e linguagens como HTML, CSS, JavaScript, C e Python.
+                        </p>
+                        <p>
+                        Ao longo da minha trajetória, adquiri ampla experiência em desenvolvimento de software, arquitetura de sistemas e integração de serviços web.
+                        Meu trabalho vai desde a estruturação de lógicas complexas — como algoritmos de busca e manipulação de matrizes aplicados na criação de jogos —
+                        até a engenharia de plataformas robustas, como o sistema de gerenciamento de alto volume de dados. No Front-end, tenho um olhar afiado para UI/UX,
+                        entregando desde Landing Pages otimizadas para conversão até sistemas ágeis e de interface intuitiva. Meu foco é sempre unir um código limpo, arquitetura
+                        escalável e a melhor experiência para o usuário.
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <section id="projetos">
+            <h2>Projetos</h2>
+
+            <div class="cards-wrapper">
+                <article class="card"> <!-- unidade de conteúdo que se repete -->
+                    <img src="./assets/img/pac-man.jpg" alt="caderno rabiscado com uma caneta aberta solta sobre ele">
+                    <h3>Simulação Pac-Man</h3>
+                    <p>
+                    Recriação do jogo Pac-Man. Desenvolvido com foco na aplicação prática de lógica de programação, 
+                    manipulação de matrizes e controle de estados do jogo em tempo real. O projeto foca na implementação 
+                    de estruturas de dados, algoritmos de busca para a inteligência dos fantasmas e lógica de movimentação.
+                    </p>
+                </article>
+
+                <article class="card"> <!-- unidade de conteúdo que se repete -->
+                    <img src="./assets/img/ironberg-sp-3.jpeg" alt="computador e monitor ligados com várias imagens abertas, sobre uma mesa com caderno, celulares e uma decoração espalhados">
+                    <h3>Ironberg Academia</h3>
+                    <p>
+                    Plataforma completa para o controle de fluxo, alunos e equipamentos da Ironberg Academia. Estruturada com 
+                    base nas melhores práticas de engenharia de software, incluindo levantamento de requisitos e modelagem de 
+                    diagramas UML. Foco em criar uma arquitetura de software robusta para suportar um alto volume de dados.
+                    </p>
+                </article>
+
+                <article class="card"> <!-- unidade de conteúdo que se repete -->
+                    <img src="./assets/img/netflix.png" alt="uma mão segurando um celular com a aba de utilitários do iPhone aberta com as redes sociais dentro dela">
+                    <h3>Landing Page</h3>
+                    <p>
+                    Desenvolvimento de Landing Page responsiva e otimizada para alta conversão. Foco na captação de leads e
+                    integração estratégica com campanhas de redes sociais, a partir de uma interface focada na experiência do 
+                    usuário (UX/UI), conectando o público de forma fluida e direta.
+                    </p>
+                </article>
+            </div>
+            
+            <a class="btn" href="http://github.com/" target="_blank"> 
+                <i class="fa-brands fa-github fa-xl"></i>Repositórios no Github
+            </a>
+        </section>
+
+        <div class="bg-dark">
+            <section id="serviços">
+                <div class="serviços">
+                    <h2>Serviços</h2>
+                    <ul class="base-list servicos-list"> <!-- Lista não ordenada -->
+                        <li>Web Development</li>
+                        <li>Mobile App</li>
+                        <li>Web Design</li>
+                        <li>Game Programming</li>
+                    </ul>
+                </div>
+                <div class="conhecimentos">
+                    <h2>Conhecimentos</h2>
+                    <ul class="base-list conhecimentos-list">
+                        <li>
+                            <i class="fa-brands fa-html5 fa-4x"></i>
+                        </li>
+                        <li>
+                            <i class="fa-brands fa-css3-alt fa-4x"></i>
+                        </li>
+                        <li>
+                            <i class="fa-brands fa-js fa-4x"></i>
+                        </li>
+                        <li>
+                            <i class="fa-brands fa-figma fa-4x"></i>
+                        </li>
+                        <li>
+                            <img src="./assets/img/icone-Photoshop.svg" alt="icone Photoshop">
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-code-compare fa-4x"></i>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+
+        <section id="contato">
+            <h2>Entre em Contato</h2>
+
+            <ul>
+                <li>
+                    <span class="icon-wrapper"><i class="fa-solid fa-phone fa-lg"></i></span>
+                    (99) 99999-9999
+                </li>
+                <li>
+                    <span class="icon-wrapper"><i class="fa-solid fa-envelope fa-lg"></i></span>
+                    diegonadurcrv@gmail.com
+                </li>
+                <li>
+                    <span class="icon-wrapper"><i class="fa-brands fa-instagram fa-lg"></i></span>
+                    <a href="https://www.instagram.com/diego_pereira.nc?igsh=eHBrZmJnN3FlMWY2&utm_source=qr" target="_blank">
+                        @diego_pereira.nc
+                    </a>
+                </li>
+            </ul>
+
+            <cite>MAY THE FORCE BE WITH YOU!</cite>
+        </section>
+
+        <footer>
+            <a href="http://byronsolutions.com/" target="_blank">
+            <span>Desenvolvido por</span> 
+            <img src="./assets/img/logo-byron-preta.png" alt="Logotipo da byron.solutions">
+            </a>
+        </footer>
+    </main>
+
+
+</body>
+</html>
+
+<!-- RECOMENDAÇÃO LEITURA: CUBE CSS -->
